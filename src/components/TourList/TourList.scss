@@ -1,0 +1,14 @@
+.tourlist{
+    width:85vw;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media(min-width:768px){
+    .tourlist{
+        flex-direction: row;
+    }
+}
