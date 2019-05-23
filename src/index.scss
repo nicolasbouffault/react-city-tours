@@ -9,6 +9,10 @@ $mainGreen:#82b340;
 $mainWhite:#fff;
 $mainGrey:#ececec;
 
+html{
+    overflow-y: scroll;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
