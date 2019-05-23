@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../logo.png';
 import './Navbar.scss';
+import {NavLink} from 'react-router-dom';
 
 export default function Navbar() {
     return (
@@ -8,19 +9,19 @@ export default function Navbar() {
             <img src={logo} alt="city tours logo"/>
             <ul className="nav-links">
                 <li>
-                    <a href="/" className="nav-link">
-                        home
-                    </a>
+                    <NavLink exact to="/" activeClassName="active" className="nav-link">
+                        Home
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="/" className="nav-link">
-                        about
-                    </a>
+                    <NavLink to="/about" activeClassName="active" className="nav-link">
+                        About
+                    </NavLink>
                 </li>
                 <li>
-                    <a href="/" className="nav-link active">
-                        tours
-                    </a>
+                    <NavLink to="/tours" activeClassName="active" className="nav-link">
+                        Tours
+                    </NavLink>
                 </li>
             </ul>
         </nav>

@@ -1,0 +1,23 @@
+.home--img-container{
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/944690/pexels-photo-944690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .text-opacity{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left:0;
+        right:0;
+        background: rgba(#000, .2);
+        color:white;
+        h1{
+            margin-top: 100px;
+            max-width: 50%;
+        }
+    }
+}

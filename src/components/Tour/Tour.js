@@ -22,9 +22,9 @@ export default class Tour extends Component {
                     </span>
                 </div>
                 <div className="tour-info">
-                    <h3>{city}</h3>
-                    <h4>{name}</h4>
-                    <h5>info <span onClick={this.handleInfo}><i className="fas fa-caret-square-down"></i></span></h5>
+                    <h2 className="h4 text-uppercase bold">{city}</h2>
+                    <h3 className="h5 text-capitalize">{name}</h3>
+                    <p className="text-capitalize">info <span onClick={this.handleInfo}><i className="fas fa-caret-square-down"></i></span></p>
                     {this.state.showInfo ? <p>{info}</p> : ""}
                 </div>
             </article>

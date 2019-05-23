@@ -12,3 +12,28 @@ $mainGrey:#ececec;
 body{
     font-family: 'Open Sans', sans-serif;
 }
+
+.text-custom{
+    font-family: 'Permanent Marker', cursive;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.btn{
+    &.btn-custom{
+        background-color:$mainGreen;
+        color: $mainWhite;
+        &:hover{
+            background-color: darken($mainGreen, 5%);
+        }
+    }
+}
+
+.box-wrapper{
+    margin: 50px;
+    padding: 30px;
+    background: $mainWhite;
+    box-shadow: 0 0 8px 1px $mainGrey;
+}
